@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, , shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+        <!-- ======== FAVICON =========-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/ico/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/ico/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/ico/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/ico/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../img/ico/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/ico/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/ico/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/ico/pple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="../img/ico/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="../img/ico/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="../img/ico/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../img/ico/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../img/ico/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="../img/ico/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="../img/ico/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="../img/ico/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="../img/ico/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="../img/ico/mstile-310x310.png" />
+
+            <!-- ========= REMIX ICONS ========== -->
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+            <!-- ======== GOOGLE FONTS ======= -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+        <!-- ========= CSS =========== -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/detail.css" type="text/css">
+
+        <title> Credo Journey</title>
+</head>
+<body>
+
+    <section class="detail-section">
+        <div class="">    
+            <div class=" logo row text-center justify-content-center">
+                <img src="../img/LOGO CREDO_orange@2x.png" alt="">
+                <p>Say Hello to your Journey </p>
+            </div>
+            <div class="nav_dark">
+                <!-- theme change button -->
+                <span class="change-theme-name">Dark mode</span>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+             </div>
+
+            <div class="detail-container">
+                <div class="details payment-method">
+                    <form action="">
+                        <h4 class="payment-title">Payment Method</h4>
+                            <div class="form-group">
+                                <label class="payment" for=" ">Virtual Account</label>
+                                <select class="form-control">
+                                    <option selected>Select your bank</option>
+                                    <option value="1">Mandiri</option>
+                                    <option value="2">BCA</option>
+                                    <option value="3">CIMB NIAGA</option>
+                                    <option value="4">Permata Bank</option>
+                                    <option value="5">BRI BRIVA</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="payment" for=" ">E - Wallet</label>
+                                <select class="form-control">
+                                    <option selected>Select your e wallet</option>
+                                    <option value="1">GOPAY</option>
+                                    <option value="2">DANA</option>
+                                    <option value="3">OVO</option>
+                                    <option value="4">LinkAja</option>
+                                </select>
+                            </div>
+                        <div class="credit-cart-details">
+                            <h6 class="title-credit-cart">Credit Cart Details (Secure payment)</h6>
+                            <div class="form-group">
+                                            <label class="payment" for="card-number">Card Number <span>*</span></label>
+                                            <input onkeypress="return event.charCode >= 48 && event.charCode <=57"  id="card-number" class="form-control" autofocus autocomplete ="off" type="tel" placeholder="•••• •••• •••• ••••">
+                                            
+                            </div>
+                            <div class="form-group">
+                                            <label class="payment" for="card-expiry">Expiry (MM/YY) <span class="required">*</span></label>
+                                            <input onkeypress="return event.charCode >= 48 && event.charCode <=57" id="card-expiry" class="form-control" autofocus autocomplete ="off" type="tel" placeholder="MM / YY">
+                            </div>
+                            <div class="form-group">
+                                            <label class="payment" for="card-cvc">Card Code <span class="required">*</span></label>
+                                            <input id="card-cvc" class="form-control"  autofocus autocomplete ="off" type="tel" maxlength="4" placeholder="CVC" >
+                            </div>
+                        </div>
+                    </form>    
+                </div>
+
+                <div class="details order-payment-checkout ">
+                    <div class="container-payment payment-checkout">
+                        <table class="table-detail">
+                            <h4 class="payment-title">Information Detail</h4>
+                            <tr>
+                                <th class="fix-information ">Name</th>
+                                <td class="input-information">Sandy Mulyadarma</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information">Date of Departure</th>
+                                <td class="input-information">7 April 2022</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information">Duration</th>
+                                <td class="input-information">5 Day 4 Night</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information">Hotel</th>
+                                <td class="input-information">5 star</td>
+                            </tr>
+                            <tr class="justify-content-between">
+                                <th class="fix-information">Airport Tax</th>
+                                <td class="input-information">Include</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information  Visa">PPN</th>
+                                <td class="input-information">Include</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information">Total Price</th>
+                                <td class="input-information">$ 280,00</td>
+                            </tr>
+                            <tr>
+                                <th class="fix-information">TotalPay (Unique Code) </th>
+                                <td class="input-information">$ 280, <span>11</span></td>
+                            </tr>
+                        </table>
+
+                        <p class="info-payment" >Please complete the payment before you
+                            Continue the trip.</p>
+
+                        <div class="payment-option">
+                            <table>
+                                <div class="bank-payment">
+                                    <tr class="bank-item">
+                                        <th><img class="img-bank" src="../img/mandiri.png" alt="">
+                                        </th>
+                                        <td class="account-bank">PT Credo Indonesia<br>Bank Mandiri
+                                            <br>0891 2376
+                                            5444
+                                        </td>
+                                    </tr>
+                                </div>
+                            </table>
+
+                            <table>
+                                <div class="bank-payment mt-4">
+                                    <tr class="bank-item">
+                                        <th><img class="img-bank" src="../img/bca.png" alt=""> </th>
+                                        <td class="account-bank">PT Credo Indonesia<br>Bank Central Asia <br>1111 2376 54111
+
+                                        </td>
+                                    </tr>
+                                </div>
+                            </table>
+                        </div>
+                        <div class="button-detail">
+                            <div class="text-center justify-content-center">
+                                <div class="text-center">
+                                    <button class=" button button--calypso" data-toggle="modal" data-target="#checkoutModal"><span>I
+                                        HAVE PAID</span> 
+                                    </button>
+                                </div>
+                                <div class="text-center">
+                                    <a href="index.html" class=" button-cancel">Cancel Booking</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <h2>Thank You !</h2>
+                    <img class=" image img-modal mt-4 mb-4" src="../img/Mail-Icon@2x.png">
+                    <p class="modal-p1">Thanks for your payment <p>
+                    <p class="modal-p2">We've sent you email for trip<br>For instruction please read it as well</p>
+                        <a href="../index.html" ><button type="button" class="button-modal button">
+                                HOME</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal -->
+
+    <script src="../js/scrollreveal.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/retina.min.js"></script>
+    <script src="../js/js3.js"></script>
+</body>
+</html>
