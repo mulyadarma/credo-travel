@@ -1,3 +1,4 @@
+let userName = prompt('Silahkan isi nama anda');
 
 // ======== SHOW MENU =========
 const navMenu = document.getElementById('nav_menu'),
